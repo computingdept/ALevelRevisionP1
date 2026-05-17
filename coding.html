@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>H446/01 Coding Practice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div>
+        <h1>H446/01 Coding Practice</h1>
+        <p>Read the code, answer the question, then use the worked answer on the right.</p>
+      </div>
+      <div class="top-actions">
+        <a class="nav-button secondary-link" href="index.html">Back to MCQs</a>
+        <div class="score-pill" id="codingScore">Score: 0 / 0</div>
+      </div>
+    </header>
+    <nav class="paper-tabs" id="codingTabs"></nav>
+    <main class="coding-layout">
+      <aside class="sidebar">
+        <div class="side-head">
+          <strong id="codingPaperTitle">Paper</strong>
+          <a id="codingPdfLink" class="pdf-link" target="_blank">Open PDF</a>
+        </div>
+        <div id="codingList"></div>
+        <button id="codingReviewBtn" class="secondary full">Review mistakes</button>
+        <button id="codingResetBtn" class="ghost full">Reset coding score</button>
+      </aside>
+      <section class="coding-main">
+        <div class="code-card" id="codingQuestionArea"></div>
+        <aside class="answer-card" id="codingAnswerArea"></aside>
+      </section>
+    </main>
+  </div>
+  <script src="coding-data.js"></script>
+  <script src="coding-app.js"></script>
+</body>
+</html>

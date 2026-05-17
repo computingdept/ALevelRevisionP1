@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>H446/01 Computer Systems MCQ Practice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div>
+        <h1>H446/01 Computer Systems MCQ Practice</h1>
+        <p>Questions organised by paper, then original exam question topic.</p>
+      </div>
+      <div class="top-actions"><a class="nav-button" href="coding.html">Coding practice</a><div class="score-pill" id="scorePill">Score: 0 / 0</div></div>
+    </header>
+    <nav class="paper-tabs" id="paperTabs"></nav>
+    <main class="layout">
+      <aside class="sidebar">
+        <div class="side-head">
+          <strong id="paperTitle">Paper</strong>
+          <a id="pdfLink" class="pdf-link" target="_blank">Open PDF</a>
+        </div>
+        <div id="questionGroups" class="question-groups"></div>
+        <button id="reviewBtn" class="secondary full">Review mistakes</button>
+        <button id="resetBtn" class="ghost full">Reset paper score</button>
+      </aside>
+      <section class="main-panel">
+        <div id="questionArea" class="question-card"></div>
+        <div class="pdf-panel">
+          <div class="pdf-panel-head">
+            <strong>Source PDF</strong>
+            <span id="pdfHint">Use the PDF to compare the original wording and diagrams.</span>
+          </div>
+          <iframe id="pdfFrame" title="Source PDF"></iframe>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
